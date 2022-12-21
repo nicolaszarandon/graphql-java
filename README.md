@@ -78,22 +78,3 @@ mutation {
   }
 }
 ```
-
-after mutation you can run query again and check if all worked as intended.
-
-## Subscription implementation
-
-Subscription implementation is done using RXJava and by implementing **GraphQLSubscriptionResolver**
-
-For full code example check  [Subscription.java](https://github.com/vladimir-dejanovic/graphql-spring-boot-example/blob/master/src/main/java/xyz/itshark/play/graphqlspringboot/example/resolves/Subscription.java)
- 
-Subscription **can be** tested from GraphiQL.
-
-Subscription example in GraphiQL
-```
-subscription {
-  data {
-    message
-  }
-}
-```
